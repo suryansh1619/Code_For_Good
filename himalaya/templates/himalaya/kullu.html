@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Exercise 1</title>
+    <link rel="stylesheet" href="{% static 'himalaya/all.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=gambetta@1,2&f[]=general-sans@1,2&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+</head>
+
+<body>
+    <section class="container">
+        <article>
+            <center><h1 id="heading">Kullu</h1></center>
+            <center>
+                <div id="art">
+                    <button id="ad1" class="button">Hadimba Temple</button>
+                    <div class="popup1" id="popup1">
+                        <div id="clsbtn1">
+                            <a href="#" id="closeButton1"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Hadimba Temple</div>
+                        <div id="content">
+                            <div id="img1">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_1.jpg' %}">
+                                    <img id="img11" src="{% static 'himalaya/Images/Kullu/hadimba_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img2">
+                                <picture>
+                                    <div class="mapouter"><div id="map11" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=hadimba%20temple%20&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Hidimba Devi Temple, locally known as Dhungari Temple,[1] also known variously as the Hadimba Temple, is located in Manāli, a hill station in the State of Himāchal Pradesh in north India. It is an ancient cave temple dedicated to Hidimbi Devi, wife of Bhima, a figure in the Indian epic Mahābhārata. The temple is surrounded by a cedar forest called Dhungiri Van Vihar at the foot of the Himālayas.                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad2" class="button" >Rohtang La</button>
+                    <div class="popup2" id="popup2">
+                        <div id="clsbtn2">
+                            <a href="#" id="closeButton2"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Rohtang La</div>
+                        <div id="content">
+                            <div id="img3">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/kullu/rohtang_1.jpg' %}">
+                                    <img id="img22" src="{% static 'himalaya/Images/kullu/rohtang_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img4">
+                                <picture>
+                                    <div class="mapouter"><div id="map22" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=rohtang%20la%20&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Rohtang Pass (Rohtang , lit: (Ro)- corpse(s),(thang)- plain/field [1]) is a high mountain pass (elevation 3,980 m (13,058 ft)) on the eastern end of the Pir Panjal Range of the Himalayas around 51 km (32 mi) from Manali in the Indian state of Himachal Pradesh. It connects the Kullu Valley with the Lahaul and Spiti Valleys of Himachal Pradesh, India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad3" class="button" >Manikaran</button>
+                    <div class="popup3" id="popup3">
+                        <div id="clsbtn3">
+                            <a href="#" id="closeButton3"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Manikaran</div>
+                        <div id="content">
+                            <div id="img5">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/kullu/manikaran_1.jpg' %}">
+                                    <img id="img33" src="{% static 'himalaya/Images/kullu/manikaran_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img6">
+                                <picture>
+                                    <div class="mapouter"><div id="map33" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=manikaran&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Manikaran is located in the Parvati Valley on river Parvati, northeast of Bhuntar in the Kullu District of Himachal Pradesh. It is at an altitude of 1760 m and is located 4 km from Kasol, about 45 km from Kullu and about 35 km from Bhuntar.This small town attracts tourists visiting the hot springs and pilgrim centres of Manali and Kullu. An experimental geothermal energy plant has also been set up here.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </article>
+    </section>
+    <section class="container">
+        <div class="marquee-wrapper" style="user-select: none;">
+            <div class="marquee-content scrollingX">
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/hadimba_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/hadimba_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/hadimba_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/hadimba_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/hadimba_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/hadimba_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/rohtang_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/rohtang_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/rohtang_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/rohtang_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/rohtang_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/rohtang_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/rohtang_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/rohtang_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/rohtang_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/rohtang_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/manikaran_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/manikaran_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/manikaran_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/manikaran_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/manikaran_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/manikaran_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/manikaran_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/manikaran_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Kullu/manikaran_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Kullu/manikaran_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="{% url 'himalaya:home' %}"><i class="fa-solid fa-house fa-xl"></i></a>
+        <a href="{% url 'himalaya:displayweather' %}"><i class="fa-solid fa-cloud-sun-rain fa-xl"></i></a>
+        <a href="{% url 'himalaya:tourism' %}"><i class="fa-solid fa-person-hiking fa-xl"></i></a>
+        <a href="{% url 'himalaya:displaytripplan' %}"><i class="fa-solid fa-user fa-xl"></i></a>
+      </footer>
+    <script src="{% static 'himalaya/all.js' %}" defer></script>
+</body>
+
+</html>

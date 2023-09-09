@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'himalaya/tour.css' %}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+</head>
+<body>
+    <center><h1>Tourism</h1></center>
+  <section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:bilaspur' %}" style="color: black;">Bilaspur</a>
+          <a href="#carousel__slide10"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide2"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide2"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:chamba' %}" style="color: black;">Chamba</a>
+          <a href="#carousel__slide1"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide3"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide3"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:hamirpur' %}" style="color: black;">Hamirpur</a>
+          <a href="#carousel__slide2"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide4"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide4"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:kangra' %}" style="color: white;">Kangra</a>
+          <a href="#carousel__slide3"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide5"
+            class="carousel__next">Go to first slide</a>
+          </div>
+      </li>
+      <li id="carousel__slide5"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:kinnaur' %}" style="color: black;">Kinnaur</a>
+          <a href="#carousel__slide4"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide6"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide6"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:kullu' %}" style="color: white;">Kullu</a>
+          <a href="#carousel__slide5"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide7"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide7"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:lahual&spiti' %}" style="color: white;">Lahual and Spiti</a>
+          <a href="#carousel__slide6"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide8"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide8"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:mandi' %}" style="color: black;">Mandi</a>
+          <a href="#carousel__slide7"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide9"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide9"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:shimla' %}" style="color: white;">Shimla</a>
+          <a href="#carousel__slide8"
+            class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide10"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+      <li id="carousel__slide10"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <a  class="place" href="{% url 'himalaya:una' %}" style="color: black;">Una</a>
+          <a href="#carousel__slide9"
+            class="carousel__prev">Go to previous slide</a>
+          <a href="#carousel__slide1"
+            class="carousel__next">Go to next slide</a>
+        </div>
+      </li>
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1"
+            class="carousel__navigation-button">Go to slide 1</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2"
+            class="carousel__navigation-button">Go to slide 2</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3"
+            class="carousel__navigation-button">Go to slide 3</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4"
+            class="carousel__navigation-button">Go to slide 4</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide5"
+            class="carousel__navigation-button">Go to slide 5</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide6"
+            class="carousel__navigation-button">Go to slide 6</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide7"
+            class="carousel__navigation-button">Go to slide 7</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide8"
+            class="carousel__navigation-button">Go to slide 8</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide9"
+            class="carousel__navigation-button">Go to slide 9</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide10"
+            class="carousel__navigation-button">Go to slide 10</a>
+        </li>
+      </ol>
+    </aside>
+  </section>
+  <footer>
+    <a href="{% url 'himalaya:home' %}"><i class="fa-solid fa-house fa-xl"></i></a>
+    <a href="{% url 'himalaya:displayweather' %}"><i class="fa-solid fa-cloud-sun-rain fa-xl"></i></a>
+    <a href="{% url 'himalaya:tourism' %}"><i class="fa-solid fa-person-hiking fa-xl"></i></a>
+    <a href="{% url 'himalaya:login_signup' %}"><i class="fa-solid fa-user fa-xl"></i></a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3121321f07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'himalaya/weather.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <span class="header"><b>KNOW THE WEATHER</b></span><br>
+            <span class="text"><p>Thinking of visiting somewhere</p><p>
+            Check the weather so that it does not wash away your</p><p>idea</p></span>
+            <form name="weatherdata" action="{% url 'himalaya:getweatherdata' %}" method="post">
+                {% csrf_token %}
+                <label class="label" for="date">Date</label>
+                <input type="date" value="{{ today }}" max='{{ maxdate }}' name="date">
+                <label class="label" for="place">Select city</label>
+                <select name="place">
+                    <option value="Shimla">Shimla</option>    
+                    <option value="Bilaspur">Bilaspur</option>
+                    <option value="Kangra">Kangra</option>
+                    <option value="Kinnaur">Kinnaur</option>
+                    <option selected value="Kullu">Kullu</option>
+                    <option value="Lahaul">Lahaul</option>
+                    <option value="Mandi">Mandi</option>
+                    <option value="Srimaur">Srimaur</option>
+                    <option value="Solan">Solan</option>
+                    <option value="Una">Una</option>
+                    <option value="Place1">Place1</option>
+                    <option value="Place2">Place2</option>                    
+                </select>
+                <div class="buttonbox">
+                    <button type="submit">Get weather</button>
+                    <a href="{% url 'himalaya:home' %}"><button type="button">Home</button></a>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="block">
+                <span class="desc2">{% if forecast is not None %}{{ forecast.address }} {{ days.datetime }} {% endif %}</span><br>
+                <span class="desc">Temperature</span><br>
+                <i style="font-size: 35px;" class="fa-solid fa-temperature-half"> {% if forecast is not none %} {{ days.temp }} F{% endif %}</i><br>
+            </div>
+            <div class="block">
+                <span class="desc">Max Temperature</span><br>
+                <i style="font-size: 35px;" class="fa-solid fa-temperature-high">  {% if forecast is not none %} {{ days.tempmax }} F{% endif %}</i><br>
+                <span class="desc">Min Temperature</span><br>
+                <i style="font-size: 35px;" class="fa-solid fa-temperature-low">  {% if forecast is not none %} {{ days.tempmin }} F{% endif %}</i><br>
+            </div>
+            <div class="block">
+                <span class="desc">Precipitation Chance</span><br>
+                <i style="font-size: 25px;" class="fa-solid fa-cloud"> {% if forecast is not none %} {{ days.precipprob }} % {% endif %}</i><br>
+                <span class="desc">Dew point</span><br>
+                <img src="{% static 'himalaya/Images/dew.png' %}" style="width: 40px;"> <span style="font-size: 40px;" class="desc">{% if forecast is not none %} {{ days.dew }} F {% endif %}</span><br>
+                
+            </div>
+            <div class="block">
+                <span class="desc">Humidity</span><br>
+                <img src="{% static 'himalaya/Images/humidity.png' %}" style="width: 40px;"><span style="font-size: 40px;" class="desc">    {% if forecast is not none %} {{ days.humidity }} % {% endif %}</span><br>
+                <span class="desc">Feels Like:  {% if forecast is not none %} {{ days.feelslike }} F {% endif %}</span><br>
+            </div>
+            <div class="block">
+                <span class="desc">Sunrise</span><br>
+                <img src="{% static 'himalaya/Images/sunrise.png' %}" style="width: 40px;"><span style="font-size: 40px;" class="desc">  {% if forecast is not none %} {{ days.sunrise }} {% endif %}</span><br>
+                <span class="desc">Sunset</span><br>
+                <img src="{% static 'himalaya/Images/sunset.png' %}" style="width: 40px;"><span style="font-size: 40px;" class="desc">{% if forecast is not none %} {{ days.sunset }} {% endif %}</span><br>
+            </div>
+            <div class="block">
+                <span class="desc"><b>Description:</b></span><br>
+                <span class="desc"> {% if forecast is not none %} {{ days.description }} {% endif %}</span><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

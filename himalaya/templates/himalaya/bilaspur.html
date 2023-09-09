@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Exercise 1</title>
+    <link rel="stylesheet" href="{% static 'himalaya/all.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=gambetta@1,2&f[]=general-sans@1,2&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+</head>
+
+<body>
+    <section class="container">
+        <article>
+            <center><h1 id="heading">Bilaspur</h1></center>
+            <center>
+                <div id="art">
+                    <button id="ad1" class="button">Bhakra Dam</button>
+                    <div class="popup1" id="popup1">
+                        <div id="clsbtn1">
+                            <a href="#" id="closeButton1"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Bhakra Nangal Dam</div>
+                        <div id="content">
+                            <div id="img1">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_1.jpg' %}">
+                                    <img id="img11" src="{% static 'himalaya/Images/Bilaspur/dam_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img2">
+                                <picture>
+                                    <div class="mapouter"><div id="map11" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=bakhra%20nangal%20dam%20hp&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Bhakra Nangal Dam is a concrete gravity dam on the Satluj River in Bhakra Village near Bilaspur in Bilaspur district, Himachal Pradesh in northern India. The dam forms the Gobind Sagar reservoir.The dam is located at a gorge near the (now submerged) upstream Bhakra village in Bilaspur district of Himachal Pradesh and is of height 226 m. The length of the dam (measured from the road above it) is 518.25 m and the width is 9.1 m.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad2" class="button" >Cave Temple</button>
+                    <div class="popup2" id="popup2">
+                        <div id="clsbtn2">
+                            <a href="#" id="closeButton2"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Balak Nath Cave Temple</div>
+                        <div id="content">
+                            <div id="img3">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_1.jpg' %}">
+                                    <img id="img22" src="{% static 'himalaya/Images/Bilaspur/temple_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img4">
+                                <picture>
+                                    <div class="mapouter"><div id="map22" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=balak%20nath%20temple%20hp&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Barot, a village originally developed in 1920s for Shanan Hydel Project, is now a tourist location in Mandi district in the Indian state of Himachal Pradesh. Barot was difficult to access until 1975, when a road was opened. It is situated 40 km from Jogindernagar and 65 km from Mandi, the District Headquarter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad3" class="button" >Govind Sagar</button>
+                    <div class="popup3" id="popup3">
+                        <div id="clsbtn3">
+                            <a href="#" id="closeButton3"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Govind Sagar</div>
+                        <div id="content">
+                            <div id="img5">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_1.jpg' %}">
+                                    <img id="img33" src="{% static 'himalaya/Images/Bilaspur/lake_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img6">
+                                <picture>
+                                    <div class="mapouter"><div id="map33" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=govind%20sagar%20hp&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Gobind Sagar Lake is a reservoir situated in Una and Bilaspur districts of Himachal Pradesh, India. It is formed by the Bhakra Dam.The reservoir is on the river Sutlej and is named in honour of Guru Gobind Singh, the tenth Sikh guru. One of the world's highest gravity dams, the Bhakra dam rises nearly 225.5 m above its lowest foundations. Under the supervision of the American dam-builder, Harvey Slocum, work began in 1955 and was completed in 1962. To maintain the water level, the flow of the river Beas was channelized to Gobind Sagar by the Beas-Sutlej link which was accomplished in 1976.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </article>
+    </section>
+    <section class="container">
+        <div class="marquee-wrapper" style="user-select: none;">
+            <div class="marquee-content scrollingX">
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/dam_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/dam_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/dam_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/dam_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/dam_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/dam_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/temple_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/temple_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/temple_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/temple_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/temple_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/temple_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/lake_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/lake_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/lake_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/lake_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Bilaspur/lake_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Bilaspur/lake_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="{% url 'himalaya:home' %}"><i class="fa-solid fa-house fa-xl"></i></a>
+        <a href="{% url 'himalaya:displayweather' %}"><i class="fa-solid fa-cloud-sun-rain fa-xl"></i></a>
+        <a href="{% url 'himalaya:tourism' %}"><i class="fa-solid fa-person-hiking fa-xl"></i></a>
+        <a href="{% url 'himalaya:displaytripplan' %}"><i class="fa-solid fa-user fa-xl"></i></a>
+      </footer>
+    <script src="{% static 'himalaya/all.js' %}" defer></script>
+</body>
+
+</html>

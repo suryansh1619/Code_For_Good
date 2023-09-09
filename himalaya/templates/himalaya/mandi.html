@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Exercise 1</title>
+    <link rel="stylesheet" href="{% static 'himalaya/all.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=gambetta@1,2&f[]=general-sans@1,2&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+</head>
+
+<body>
+    <section class="container">
+        <article>
+            <center><h1 id="heading">Mandi</h1></center>
+            <center>
+                <div id="art">
+                    <button id="ad1" class="button">Parashar Lake</button>
+                    <div class="popup1" id="popup1">
+                        <div id="clsbtn1">
+                            <a href="#" id="closeButton1"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Parashar Lake</div>
+                        <div id="content">
+                            <div id="img1">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_1.jpg' %}">
+                                    <img id="img11" src="{% static 'himalaya/Images/Mandi/parashar_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img2">
+                                <picture>
+                                    <div class="mapouter"><div id="map11" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=parashar%20lake%20Mandi&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Parashar Lake (also spelled Prashar Lake) is a freshwater lake located at an elevation of 2,730 metres (8,960 ft) in the Mandi district of Himachal Pradesh, India. It lies 49 km (30 mi) east of the town of Mandi, and has a three storied pagoda-like temple dedicated to the sage Prashar situated on its bank. It contains a floating island.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad2" class="button">Bhima Temple</button>
+                    <div class="popup2" id="popup2">
+                        <div id="clsbtn2">
+                            <a href="#" id="closeButton2"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Shri Bhima Kali Temple</div>
+                        <div id="content">
+                            <div id="img3">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_1.jpg' %}">
+                                    <img id="img22" src="{% static 'himalaya/Images/Mandi/bhima_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img4">
+                                <picture>
+                                    <div class="mapouter"><div id="map22" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=bhimakali%20temple%20Mandi&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Bhima Kali Temple is a temple at Mandi in Himachal Pradesh in India, dedicated to the mother goddess Bhimakali, presiding deity of the rulers of former Bushahr State. The temple is situated about 180 km from Shimla and it is as holy as 51 Shakti Peethas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="ad3" class="button">Rewalsar Lake</button>
+                    <div class="popup3" id="popup3">
+                        <div id="clsbtn3">
+                            <a href="#" id="closeButton3"><i class="fa-solid fa-beat fa-x fa-xl"></i></a>
+                        </div>
+                        <div id="tour">Rewalsar Lake</div>
+                        <div id="content">
+                            <div id="img5">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_1.jpg' %}">
+                                    <img   id="img33" src="{% static 'himalaya/Images/Mandi/revalsar_1.jpg' %}" alt="sample-one.jpeg">
+                                </picture>
+                            </div>
+                            <div id="img6">
+                                <picture>
+                                    <div class="mapouter"><div id="map33" class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=rewalsar%20lake%20Mandi&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 400px; height: 360px;"></iframe><style>.mapouter{position:relative;height:360px;width:400px}.gmap_canvas{overflow:hidden;height:360px;width:400px}.gmap_canvas iframe{position:relative;z-index:2}.gmap_canvas a{position:absolute;top:0;z-index:0}</style><a href="https://www.eireportingonline.com"></a></div></div>
+                                </picture>
+                            </div>
+                            <div id="info">
+                                <p>
+                                    Rewalsar Lake, also known as Tso Pema, is a mid-altitude lake located in the mountains of the Mandi district in Himachal Pradesh, India. It is located 22.5 km south-west from the town of Mandi, at an elevation of about 1,360 metres (4,460 ft) above sea level, with a shoreline of about 735 m. Rewalsar Lake is a sacred spot for Hindus, Sikhs and Buddhists
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </article>
+    </section>
+    <section class="container">
+        <div class="marquee-wrapper" style="user-select: none;">
+            <div class="marquee-content scrollingX">
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/parashar_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/parashar_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/parashar_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/parashar_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/parashar_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/parashar_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/bhima_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/bhima_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/bhima_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/bhima_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/bhima_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/bhima_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_1.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/revalsar_1.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_2.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/revalsar_2.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_3.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/revalsar_3.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_4.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/revalsar_4.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+                <div class="card-testimonial">
+                    <article>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{% static 'himalaya/Images/Mandi/revalsar_5.jpg' %}">
+                            <img src="{% static 'himalaya/Images/Mandi/revalsar_5.jpg' %}" alt="sample-one.jpeg">
+                        </picture>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="{% url 'himalaya:home' %}"><i class="fa-solid fa-house fa-xl"></i></a>
+        <a href="{% url 'himalaya:displayweather' %}"><i class="fa-solid fa-cloud-sun-rain fa-xl"></i></a>
+        <a href="{% url 'himalaya:tourism' %}"><i class="fa-solid fa-person-hiking fa-xl"></i></a>
+        <a href="{% url 'himalaya:displaytripplan' %}"><i class="fa-solid fa-user fa-xl"></i></a>
+      </footer>
+    <script src="{% static 'himalaya/all.js' %}" defer></script>
+</body>
+
+</html>
