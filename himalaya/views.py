@@ -121,7 +121,7 @@ def tripplanner(request):
 def gettripplan(request):
     global tripplan
     
-    openai.api_key = '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'
+    openai.api_key = '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'
     messages = [ {"role": "system", "content": 
                 "You are a intelligent assistant."} ]
     date=request.POST['date']
