@@ -9,6 +9,9 @@ body {
     height: 100vh;
     width: 100vw;
 }
+h2{
+    font-weight: 600;
+}
 #top{
     position: relative;
     width: 100%;
@@ -57,10 +60,10 @@ section img{
     color:#20496a;
 }
 #sec p{
-    font-size: 1.2rem;
-  line-height:2rem;
-  font-weight:300;
-    color:#20496a;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color:#201384;
 }
 footer{
   margin-top:30px;
