@@ -27,8 +27,8 @@ body,h1,p,figure,blockquote,dl,dd {
     display: inline-block;
     margin:2.5em;
     border-radius: 20px;
-	/* border: 1px solid #180eace3; */
-	/* background-color: #180eace3; */
+	/* border: 1px solid #180eace3;
+	background-color: #180eace3; */
 	color: #000;
 	font-size:20px;
 	font-weight: bold;
@@ -39,8 +39,8 @@ body,h1,p,figure,blockquote,dl,dd {
     transition: color 0.25s, border-color 0.25s, box-shadow 0.25s ,transform 0.25s;
 }
 #ad1:hover,#ad2:hover,#ad3:hover{
-    border-color: #ffffff;
-    color: black;
+    border-color: white;
+    color:  black;
     box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
     transform: translateY(-0.25em);
     cursor: pointer;
