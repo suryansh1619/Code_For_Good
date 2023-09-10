@@ -160,4 +160,4 @@ def mandi(request):
 def shimla(request):
     return render(request,"himalaya/shimla.html",context={})
 def lahual_spiti(request):
-    return render(request,'himalaya/lahua&spiti.html',context={})
+    return render(request,'himalaya/lahual&spiti.html',context={})
